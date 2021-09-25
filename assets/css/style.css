@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Poppins' , Helvetica, sans-serif;
+}
+
+.center {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+section.one {
+    width: 100%;
+    min-height: 100%;
+    background: url(/assets/imgs/teslacar.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: slide 10s infinite;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo {
+    position: relative;
+    top: 10px;
+}
+
+.logo img {
+    width: 180px;
+}
+
+.menu {
+    margin-top: 10px;
+}
+
+.menu a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #000;
+    text-decoration: none;
+    transition: 0.3s;
+    padding: 3px 5px;
+}
+
+.menu a:hover {
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.title {
+    text-align: center;
+}
+
+.title h2 {
+    color: #000;
+    font-size: 40px;
+    margin-top: 75px;
+}
+.title p {
+    color: #75787d;
+}
+
+.title p a {
+    color: #75787d;
+}
+
+.buttons {
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    left: 0;
+    text-align: center;
+}
+
+.buttons a {
+    display: inline-block;
+    padding: 8px 50px;
+    margin: 0 15px;
+    background-color: #313136;
+    color: #fff;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.buttons a:hover {
+    background-color: #ccc;
+    color: #313136;
+}
+
+.buttons .two-buttons {
+    background-color: #ccc;
+    color: #313136;
+}
+
+.buttons .two-buttons:hover {
+    background-color: #313136;
+    color: #ccc;
+}
+
+@keyframes slide {
+    0% {
+    background-image: url(/assets/imgs/teslacar.png);    
+    }
+    33% {
+    background-image: url(/assets/imgs/teslacar2.png);    
+    }
+    67% {
+        background-image: url(/assets/imgs/teslacar4.png);    
+    }
+}
